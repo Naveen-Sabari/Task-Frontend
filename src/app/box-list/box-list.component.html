@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="header">
+    <button (click)="addSquare()" class="add">Add Square</button>
+    <input [(ngModel)]="newTitle" placeholder="Enter title" />
+  </div>
+  <div class="box-container" fxLayout="row" fxLayoutWrap fxLayoutAlign="start start">
+    <div *ngFor="let box of squares; let i = index" class="box">
+      <div >
+        <span class="box-number">{{ i + 1 }}</span>
+        <span class="box-title" (click)="viewBoxDetails(box.id)" >{{ box.title }}</span>
+      </div>
+      <button class="delete-button" (click)="deleteSquare(box.id)">X</button>
+    </div>
+  </div>
+</div>

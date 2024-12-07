@@ -1,0 +1,74 @@
+.container {
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 15px; 
+  margin-bottom: 20px;
+}
+
+.add-button:hover {
+  background-color: #0056b3; 
+  transform: scale(1.05); 
+}
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  background-color: blue;
+  margin: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(251, 10, 10);
+  font-size: 18px;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.box-number {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.box-title {
+  cursor: pointer;
+  text-align: center;
+  font-size: 30px; 
+  word-wrap: break-word;      
+  word-break: break-word;     
+  white-space: normal;       
+  max-height: 90%;           
+  overflow: hidden;            
+  padding: 5px;
+  text-overflow: ellipsis;    
+  line-height: 1.2em;        
+}
+
+
+.delete-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: red;
+  background: none; 
+  border: none;
+  padding: 0; 
+  cursor: pointer;
+}
+
+
+
+.add:focus {
+  outline: none; 
+  box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.5); 
+}
